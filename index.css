@@ -21,7 +21,7 @@ body{
     padding-top: 0%;
     font-size: 20vw; 
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px #bd4ada;
+    -webkit-text-stroke: 1px #9362F2;
     opacity: 1;
     position: absolute;
     top: 40%;
@@ -41,8 +41,8 @@ body{
     line-height: 286.74%;
 }
 
-.btn1{
-    background-color: #bd4ada;
+.btn{
+    background-color: #9362F2;
 }
 
 /* @media only screen and (min-width: 600px) {
@@ -52,7 +52,7 @@ body{
 
 .text2{
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px #bd4ada;
+    -webkit-text-stroke: 1px #9362F2;
     margin-top: 5%;
 }
 
