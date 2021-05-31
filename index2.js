@@ -1,4 +1,4 @@
-//form validation
+// //form validation
 // document.querySelector('.myform').addEventListener('submit',function(event){
 //     alert(1);
 //    //prevents data from being shown on top with file name
@@ -30,5 +30,40 @@
 
 
  function abc(){
-    alert('Thank you for submitting the form. We will get back to you soon.');
+    // alert('Thank you for submitting the form. We will get back to you soon.');
+    var n=document.getElementById("name").value;
+    var x=document.getElementById("email").value;
+    var p=document.getElementById("phone").value;
+    var b=0;
+
+    
+    var atposition=x.indexOf("@");  
+    var dotposition=x.lastIndexOf(".");
+    if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+        document.getElementById("email1").innerHTML="*Please enter a valid e-mail address";  b=1;
+    }  
+
+    var phoneno = /^\d{10}$/;
+    if(!(p.match(phoneno))){
+        document.getElementById("num").innerHTML="*Please enter a valid phone number";  b=1;
+    }
+
+    var alpha = /^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$/;
+    if(!(n.match(alpha))){
+        document.getElementById("name1").innerHTML="*Please enter a valid name";  b=1;
+    }
+
+    
+
+    if(b===0){
+        
+        document.getElementById("name").value='';
+        document.getElementById("email").value='';
+        document.getElementById("phone").value='';
+        document.getElementById("desc").value='';
+        $('.abc').hide();
+        alert('Thank you for submitting the form. We will get back to you soon.');
+    }
+
+        
  }
