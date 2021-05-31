@@ -1,5 +1,6 @@
 body{
-    background-color: black;
+    background-color: rgb(12, 12, 12);
+    color: white;
 }
 
 .a1{
@@ -30,7 +31,6 @@ body{
 
 #text1{
     font-size: 2vw;
-    color: aliceblue;
     opacity: 2;
     position: absolute;
     top: 40%;
@@ -41,9 +41,8 @@ body{
     line-height: 286.74%;
 }
 
-.btn{
+.btn1{
     background-color: #bd4ada;
-    color: white;
 }
 
 /* @media only screen and (min-width: 600px) {
@@ -58,3 +57,22 @@ body{
 }
 
 
+.feature{
+    color: #9362F2;
+    font-family: 'Open Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.fab:hover{
+    transform: scale(1.1);
+}
+
+.fab{
+    text-shadow: 5px 5px 30px #bd4ada; 
+}
+
+.hide{
+    display: none;
+}

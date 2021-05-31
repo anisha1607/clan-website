@@ -3,4 +3,10 @@ $(function () {
       var $nav = $(".fixed-top");
       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
+
+    $(".abc").hide();
+
+    $("button").click(function(){
+      $(".abc").toggle();
+    });
   });
