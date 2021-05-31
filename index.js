@@ -6,7 +6,7 @@ $(function () {
 
     $(".abc").hide();
 
-    $("button").click(function(){
+    $(".btn1").click(function(){
       $(".abc").toggle();
     });
   });
